@@ -1,0 +1,81 @@
+body{
+    background-image: url(./assets/1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh;
+    #czas{padding-left: 5vh};
+    }
+
+    .navbar{ 
+        img{width: 35%;}}
+
+.cheak{
+    padding-top: 2%;
+}
+
+.Linie{
+    background: rgb(199, 71, 39);
+}
+
+.place{
+    display: flex;
+    padding:0.5% 10% 2% 10%; 
+    margin-bottom: 10%;
+    background:rgb(199, 71, 39); 
+    .out{padding-right:  10px};
+    .arrows{padding-left: 5%;padding-top: 2%;}
+    .in{padding-left: 5%};
+    .dateOut{padding-left: 3%; padding-right: 1%; font-size: 14px};
+    .dateIn{padding-left: 2%; padding-right: 1%;  font-size: 14px};
+    .Atl{padding-left: 5%;}
+    .calender1{padding-top: 6%};
+    .calender2{ padding-top: 6%};
+    .submit{padding-left: 2.5%;}
+}
+.side{
+    background: rgb(199, 71, 39);;
+}
+
+.other{
+    display: flex;
+    padding-bottom: 3%;
+    padding-right: 10%;
+
+    
+    #weather{
+        padding-left: 5%;
+        padding-right: 10%;
+    }
+}
+
+
+.mr-3{
+    width: 200px;
+    height: 200px;
+}
+#lot{
+    margin-bottom: 10%;
+    .Atlanta{text-align: justify};
+    .Pekin{text-align: justify};
+    .Londyn{text-align: justify;}
+
+}
+
+.tab-content img{
+    float: left;
+}
+
+#poradnik{
+    margin-bottom: 5%;
+    text-align: justify;
+    
+}
+
+footer{
+    img{width: 125px;height: 125px;}
+}

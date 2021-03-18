@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+
+    <title>Loty</title>
+  </head>
+  <body>
+    <div class="container">
+    <header>
+
+      <nav nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/logo.png" alt="logo" />
+        </a>
+        
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#lot"
+                >Miejsca do których latamy
+                <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#poradnik">Poradnik podróżnika</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Więcej
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#weather">Pogoda</a>
+                <a class="dropdown-item" href="#waluta">Aktualna cena waluty</a>
+              </div>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Zaloguj się</a>
+            </li>
+          </ul>
+
+          <div id="czas"></div>
+        </div>
+      </nav>
+
+
+    </header>
+
+    <main>
+    
+    <div class="Linie">
+        <div class="jumbotron-fluid text-center caption">
+          <h1 class="display-5">Tanie linie lotnicze</h1>
+          <span class="badge badge-danger">duży wybór linii lotnicznych</span>
+          <span class="badge badge-primary">50% zniżki dla rodzin wielodzietnych
+          </span>
+          <span class="badge badge-secondary">30 % zniżki dla emerytów</span>
+          <span class="badge badge-success">happy hours</span>
+        </div>
+      </div>
+      <div class="side cheak col-md-12 text-center">
+        <input type="radio" class="roundTrip" value="w obie strony" />
+        <label for="roundtrip" class="radioTrip">w obie strony</label>
+        <input type="radio" class="OneWayTrip" value="w jedną stronę" />
+        <label for="roundtrip" class="radioTrip">w jedną stronę</label>
+      </div>
+
+      <form action="" class="place">
+      <div class=" input-group mb-3" >
+        <div class="out input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01"
+            >Miejsce wylotu:</label>
+            <div class="arrows">
+            <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class=" NMm5M hhikbc"><path d="M17 4l-1.41 1.41L18.17 8H11v2h7.17l-2.58 2.59L17 14l5-5-5-5zM7 20l1.41-1.41L5.83 16H13v-2H5.83l2.58-2.59L7 10l-5 5 5 5z"></path></svg>
+            </div>
+        </div>
+
+        <div class="kat">
+        <select class="custom-select" id="inputGroupSelect01">
+          <option value="1">Katowice</option>
+        </select>
+        </div>
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="in input-group-prepend" >
+          <label class="input-group-text" for="inputGroupSelect01"
+            >Miejsce przylotu:</label
+          >
+        </div>
+        <div class="Atl">
+        <select class="custom-select" id="inputGroupSelect01">
+          <option value="1">Atlanta</option>
+          <option value="2">Pekin</option>
+          <option value="3">Londyn</option>
+        </select>
+        </div>
+      </div>
+
+      <div class="dateOut">
+        <label>Data wylotu:</label>
+        </div>
+        <div class="calender1">
+          <input type="date" id="datepicker" value="data" min=""/>
+      </div>
+
+      <div class="dateIn">
+        <label>Data przylotu:</label>
+      </div>
+      <div class="calender2">
+        <input type="date" id="datepicker2" value="" min="">
+      </div>
+      <div class="submit">
+        <input type="submit" name="przeslij" value="wybierz" >
+        </div>
+      </form>
+
+
+
+
+    <div class="other">
+      <div id="weather">
+        <div id="openweathermap-widget-11"></div>
+        <script src="//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/d3.min.js"></script>
+        <script>
+          window.myWidgetParam
+            ? window.myWidgetParam
+            : (window.myWidgetParam = []);
+          window.myWidgetParam.push({
+            id: 11,
+            cityid: "3096472",
+            appid: "84d23d36dd19e4c9bf57e108e560601a",
+            units: "metric",
+            containerid: "openweathermap-widget-11",
+          });
+          (function () {
+            var script = document.createElement("script");
+            script.async = true;
+            script.charset = "utf-8";
+            script.src =
+              "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(script, s);
+          })();
+        </script>
+      </div>
+
+      <div id="waluta">
+        <div>
+          <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+          ></script>
+          <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"
+          ></script>
+          <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+          <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        </div>
+
+
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nazwa waluty</th>
+              <th scope="col">Aktualny kurs</th>
+              <!-- <th scope="col">Handle</th> -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Brytyjski Funt</td>
+              <td id="BF"></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Dolar amerykański</td>
+              <td id="DA"></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Juan Chiński</td>
+              <td id="JC"></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Euro</td>
+              <td id="E"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="lot"> 
+    <div class="row">
+      <div class="col-4">
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Atlanta</a>
+          <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Pekin</a>
+          <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Londyn</a>
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="Atlanta tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list"><p>
+            <img src="./assets/Atlanta.jpg" class="mr-3" alt="Atlanta" />
+            Stolica i jednocześnie najbardziej zaludnione miasto
+            amerykańskiego stanu Georgia, z populacją liczącą ok. 420
+            tysięcy mieszkańców (2010). Atlanta stanowi kulturalne i
+            ekonomiczne centrum obszaru metropolitalnego Atlanta,
+            zamieszkiwanego przez ponad 5 milionów osób, a także
+            najważniejszy komponent rozrastającego się megapolis, znanego
+            jako Piedmont Atlantic Megaregion.
+          </p>
+          <p>
+            W 2010 Atlanta była 7. miastem amerykańskim pod względem liczby
+            odwiedzin przez turystów będących mieszkańcami Ameryki
+            Północnej, będąc celem podróży ponad 35 milionów amerykańskich
+            turystów rocznie, a także 12. miastem amerykańskim pod względem
+            liczby odwiedzin przez turystów zza oceanu (712 tysięcy
+            turystów). Jednocześnie zainteresowanie Atlantą pośród turystów
+            ze świata wzrosło o 25% w porównaniu z 2009 rokiem, kiedy to
+            odwiedziło ją 520 tysięcy gości. Do najpopularniejszych atrakcji
+            miasta należą liczne muzea Atlanty, a zwłaszcza the High,
+            obiekty historyczne, związane z działalnością Martina Luthera
+            Kinga, Georgia Aquarium (największe kryte akwarium na świecie),
+            a także World of Coca-Cola. Do innych muzeów w mieście zaliczyć
+            można m.in.: Atlanta Cyclorama & Civil War Museum, Carter Center
+            and Presidential Library oraz Margaret Mitchell House and Museum
+            (gdzie Mitchell napisała powieść Przeminęło z wiatrem). W
+            Atlancie istnieją również muzea skierowane przede wszystkim do
+            dzieci, takie jak Fernbank Science Center i Imagine It! The
+            Children's Museum of Atlanta. W Atlanta Botanical Garden,
+            położonym tuż obok Piedmont Park, znajduje się jedyna w Stanach
+            Zjednoczonych podwieszana ścieżka spacerowa, sięgająca poziomu
+            koron (o długości 180 metrów). Z kolei Zoo Atlanta jest jednym z
+            zaledwie czterech zoo w kraju, które zamieszkują pandy wielkie
+          </p>
+          Źródło:www.wikipedia.org</div>
+          
+          <div class="Pekin tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list"><p>
+            <img src="./assets/Pekin.jpg" class="mr-3" alt="Pekin" />
+            Stolica Chińskiej Republiki Ludowej oraz jedno z czterech miast
+            wydzielonych, podlegające bezpośrednio władzom kraju. Od
+            północy, zachodu i południa graniczy z prowincją Hebei, a od
+            wschodu z miastem wydzielonym Tiencin. Pekin jest drugim, po
+            Szanghaju, miastem Chińskiej Republiki Ludowej pod względem
+            liczby ludności. Miasto wydzielone o powierzchni 16 406 km²
+            liczyło w 2019 roku ok. 21,5 mln mieszkańców. Miasto pełni
+            funkcję największego ośrodka politycznego, oświatowego i
+            kulturalnego kraju. Wielki ośrodek gospodarczy z rozwiniętym
+            przemysłem maszynowym, samochodowym, taboru kolejowego,
+            elektronicznym, chemicznym, rafineryjnym, spożywczym,
+            włókienniczym. Krzyżują się tu ważne linie kolejowe i drogi
+            samochodowe. W mieście znajduje się Ambasada RP.
+          </p>
+          <p>Miasto przyciąga wielu turystów chcących zobaczyć znane na całym świecie zabytki architektury. Plac Tian’anmen, oprócz swojego znaczenia politycznego, ma także wielkie znaczenie turystyczne. Stąd blisko jest do Zakazanego Miasta. Innymi znanymi zabytkami są Pałac Letni i Świątynia Nieba.
+            Źródło:www.wikipedia.org
+          </div>
+          
+          <div class="Londyn tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list"><p>
+            <img src="./assets/Londyn.jpg" class="mr-3" alt="Londyn" />
+            Stolica Anglii i Wielkiej Brytanii, największe miasto królestwa, położone w jego południowo-wschodniej części nad Tamizą. Jest trzecim co do wielkości miastem Europy, po Moskwie i Stambule; jest jednym z większych miast świata zarówno w skali samego miasta, jak i całej aglomeracji. Liczba mieszkańców Londynu (w granicach tzw. Wielkiego Londynu) wynosi ok. 8,982 mln. (2019 r.) na obszarze 1572 km²; cała zaś aglomeracja londyńska, łącznie ze wszystkimi przyległymi miejscowościami w 2015 liczyła prawie 14 milionów mieszkańców(obszar tzw. metropolia). Około 20% mieszkańców pochodzi z Azji, Afryki i Karaibów.</p>
+            Źródło:www.wikipedia.org</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div id="poradnik">
+
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Bagaż
+                </button>
+              </h2>
+            </div>
+        
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <h4>Co zabrać w podróż</h4>
+                  <ol>
+                    <li>Paszport lub dowód osobisty – pamiętaj, że według międzynarodowego prawa jedynym rodzajem dokumentu tożsamości poświadczającym Twoją tożsamość za granicą Polski jest paszport. Podróżujący do krajów układu Schengen (gdzie paszport nie jest wymagany do przekroczenia granicy) powinni zabrać ze sobą paszport.</li>
+                    <li> Wydrukowany bilet elektroniczny (ewentualnie kod lub numer biletu elektronicznego) lub bilet papierowy,</li>
+                    <li>Jeśli korzystałeś z odprawy online, zabierz z sobą wydrukowane karty pokładowe</li>
+                    <li>Plan lotu, czyli godziny wylotu i przylotu oraz numery rejsów</li>
+                    <li>Wizę – jeśli podróżujesz do krajów, gdzie jest ona wymagana.</li>
+                    <li>Środki płatnicze (karty płatnicze, gotówka),</li>
+                    <li>Odpowiednie lekarstwa,</li>
+                    <li>Zaświadczenia lekarskie, weterynaryjne, o szczepieniach – jeśli są wymagane,</li>
+                    <li>Adresy jednostek dyplomatycznych Polski. W razie utracenia dokumentów tożsamości i innych zaświadczeń należy skontaktować się z odpowiednią polską placówką dyplomatyczną.</li>
+                    <li>Wydrukowną polisę ubezpieczeniową – jeśli wykupiłeś ubezpieczenie turystyczne</li>
+                  </ol>
+                  
+                  <h4>Przedmioty zabrionione</h4>
+                  Przepisy dotyczące przewozu różnego rodzaju przedmiotów różnią się w zależności od linii lotniczych oraz kraju, do jakiego się udajemy.  Sprawdź, na stronie przewoźnika co można zabrać na pokład samolotu.
+
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Przed wylotem
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                <h4>Jakie dokumenty zabrać ze sobą w podróż?</h4>
+                  <ul>
+                    <li>paszport, którego posiadanie za granicą zalecane jest przez Ministerstwo Spraw Zagranicznych, nawet w przypadku podróży do krajów strefy Schengen. Pamiętaj, że paszport nie może być uszkodzony, a termin ważności musi wynosić przynajmniej 3 miesiące od daty przylotu/przyjazdu (jeśli podróżujesz poza kraje EOG).</li>
+                    <li>wizę, która wymagana jest do niektórych krajów, np. do USA czy Rosji. Pasażer ma obowiązek zapoznania się z wymogami wizowymi we własnym zakresie. Do niektórych państw wymagana jest również wiza tranzytowa, o którą również trzeba zatroszczyć się we własnym zakresie.</li>
+                    <li>bilet elektroniczny, który otrzymujesz w wiadomości e-mail po opłaceniu rezerwacji na lot. Taki bilet najlepiej wydrukować i zabrać ze sobą na lotnisko. Podróżni, którzy nie mają możliwości wydrukowania biletu, mogą spisać dane lotu oraz kod (numer) rezerwacji, które należy zabrać ze sobą na lotnisko.</li>
+                    <li>kartę pokładową – jeśli dokonałeś odprawy online, wydrukuj kartę pokładową i zabierz ze sobą na lotnisko. Dla pasażerów linii Ryanair posiadanie karty pokładowej jest obowiązkowe.</li>
+                  </ul>
+
+                  <h4>Jak wygląda odprawa na lotnisku?</h4>
+                  Odprawa biletowo-bagażowa to pierwszy etap Twojego lotu. Do stanowisk odprawy (tzw. check-in) należy udać się natychmiast po przybyciu na port lotniczy. Każdy lot ma nadany odpowiedni numer stanowiska – informacja taka wyświetlana jest na monitorach umieszczonych w holu ogólnodostępnym oraz nad stanowiskami odprawy.
+
+                  Pamiętaj, aby przybyć na lotnisko na 2 godziny przed planowanym odlotem. Stanowiska odprawy biletowo-bagażowej zamykane są na około 45 minut przed planowanym odlotem. Zgodnie z regulaminem większości linii lotniczych, jeśli spóźnisz się do odprawy, Twój bilet zostanie anulowany.
+
+                  Podczas odprawy zostaniesz poproszony o dokument tożsamości (paszport lub dowód osobisty) oraz bilet elektroniczny (ewentualnie kod rezerwacji). Na podstawie tych dokumentów otrzymasz kartę pokładową, która uprawnia Cię do wejścia na pokład samolotu. Podczas odprawy należy również nadać bagaż rejestrowany, jeśli z takim podróżujesz. Pamiętaj, że niektóre linie lotnicze nakładają dodatkową opłatę za odprawę na lotnisku – np. Ryanair. Pasażerowie tej linii muszą odprawić się online i zabrać ze sobą wydrukowaną kartę pokładową na lotnisko.
+
+                  Po dokonaniu odprawy należy udać się do bramek kontroli bezpieczeństwa, gdzie pasażerowie oraz ich bagaże podręczne zostają poddane kontroli bezpieczeństwa. Z bagażu należy wyjąć i włożyć do kuwety wszystkie urządzenia elektryczne i elektroniczne (np. laptop, suszarka do włosów, telefon) , a kieszenie opróżnić z wszelkich przedmiotów zawierających elementy metalowe np. klucze, monety, wizytownik itp.
+
+                  Na niektórych lotniskach istnieje możliwość odprawienie się samodzielnie za pomocą automatów do samodzielnej odprawy. Takie automaty dostępne są w największych portach lotniczych na całym świecie, a informacja o ich dostępności znajduje się na stronach internetowych poszczególnych lotnisk.
+
+
+                  <h4>Odprawa online</h4>
+
+
+                  Klienci serwisu biletylotnicze.pl mogą odprawić się online w przypadku lotów liniami Ryanair, Wizz Air, Easy Jet. Link do odprawy znajduje się w e-mailu wysyłanym do klienta. 
+
+                  Pasażerowie korzystający z odprawy online muszą pamiętać o tym, by wydrukować kartę pokładową, która generowana jest podczas procesu odprawy online oraz zabrać ją ze sobą na lotnisko. Wszystkie strony karty pokładowej muszą być wydrukowane na osobnych kartkach, w ten sposób, by druga strona kartki nie była zadrukowana. Karta może zostać wydrukowana w kolorze czarno-białym. Na lotnisku należy mieć przy sobie ten sam dokument tożsamości, który został użyty do odprawy online.
+
+                  Odprawa online w tanich liniach lotniczych Ryanair jest obowiązkowa, a opłata za nią wynosi 28 PLN. Opłata za odprawę i wydrukowanie karty pokładowej na lotnisku kosztuje 45 EUR lub 214 PLN.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Więcej informacji
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                <h4>Czy ciężarne kobiety mogą podróżować samolotem?</h4>
+
+                  Jeśli nie ma przeciwwskazań lekarza, kobiety w ciąży mogą podróżować samolotem, aczkolwiek różne linie lotnicze inaczej regulują zasady przewozu kobiet ciężarnych.
+
+                  <h4>Jak pakować bagaż kabinowy?</h4>
+                  Bagaż podręczny to bagaż, który zabierasz z sobą na pokład samolotu. Każde linie lotnicze ustalają własne reguły przewozu bagażu podręcznego, które jednak mają swoje wspólne cechy:
+                  <ol>
+                    
+                    <li>W tanich liniach lotniczych ustalony limit wymiarów to z reguły  55 x 40 x 20 cm, choć limit ten może się różnić w zależności od przewoźnika.</li>
+                    <li>Większość tanich i rejsowych  linii lotniczych ustala limit wagowy na poziomie 10 kg.</li>
+                    <li>Większość tanich i rejsowych  linii lotniczych ustala limit ilościowy –  1 sztukę bagażu podręcznego ( w rejsowych liniach lotniczych w klasie biznes i pierwszej klasie pasażerowie często mogą zabierać z sobą 2 sztuki bagażu podręcznego).</li>
+                    <li>Niemowlętom w większości tanich linii lotniczych nie przysługuje bagaż podręczny.</li>
+                    <li>Płyny (kosmetyki, napoje, żele) można przewozić tylko w pojemnikach plastikowych do 100 ml. Wszystkie pojemniki muszą się zmieścić w plastikowej przeźroczystej torbie o pojemności 1 l ( za wyjątkiem pokarmu dla niemowląt oraz leków).</li>
+                    <li>Jeśli Twój bagaż podręczny będzie za ciężki lub za duży, linie lotnicze mogą nałożyć na Ciebie wysoką karęlub odprawić go jako bagaż rejestrowany, dlatego należy ściśle przestrzegać wyznaczonych limitów.</li>
+
+                  </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </main>
+
+
+    <footer>
+        <div class="col-12 text-center">
+          <hr />
+          <h4>Kontakt do twórców:</h4>
+          <img src="./assets/MOL.png" alt="LOGO" />
+          <p>Tworzymy z pasją.</p>
+          <strong>Informacje kontaktowe pod numerem: +48 664556335</strong>
+          <hr />
+          <p>Social media:</p>
+          <a href="https://www.youtube.com" target="_blank">
+            <i class="fab fa-youtube-square fa-2x"></i>
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+          <p>&copy; Copyright by MOL 2021</p>
+        </div>
+      
+    </footer>
+
+    <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+
+
+  </body>
+</html>
