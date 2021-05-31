@@ -1,0 +1,23 @@
+* {margin:0;
+}
+html{
+	width:100%;
+	height:100%;
+}
+:root {
+	--gd1-color1: #12c2e9;
+	--gd1-color2: #f64f59;
+	
+	--gd2-color1: #a8ff78;
+	--gd2-color2: #78ffd6;
+	
+	--gd3-color1: #f12711;
+	--gd3-color2: #f5af19;
+  }
+body{
+    background-image: url(./assets/1.jpg);
+    background-position: center;
+    background-repeat: repeat;
+	background-attachment: fixed;
+    background-size: cover;
+}

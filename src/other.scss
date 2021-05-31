@@ -1,0 +1,35 @@
+#other{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 3%;
+
+}
+.mr-3{
+    width: 200px;
+    height: 200px;
+}
+#lot{
+	display:flex;
+    margin-bottom: 10%;
+	padding-left: 7vh;
+	padding-right: 5vh;
+    .Atlanta{text-align: justify};
+    .Pekin{text-align: justify};
+    .Londyn{text-align: justify;}
+
+}
+
+.tab-content img{
+    float: left;
+}
+
+#poradnik{
+	display: flex;
+    margin-bottom: 5%;
+	padding-left: 7vh;
+	padding-right: 5vh;
+    text-align: justify;
+    
+}
