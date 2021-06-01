@@ -17,9 +17,17 @@ function extraBaggageLondyn(){
    return 0;
   }
 };
+function powrotLondyn(){
+  if(flyLondyn.options[flyLondyn.selectedIndex].value==="TwoTrip"){
+    return 700;
+  }
+  else{
+    return 0;
+  }
+};
 
 function SumLondyn(){
-  let wynikLondyn= priceLondyn()+extraBaggageLondyn();
+  let wynikLondyn= priceLondyn()+extraBaggageLondyn()+powrotLondyn();
   document.getElementById("priceLondyn").innerHTML =`Cena: ${wynikLondyn} zł</br>`
   return wynikLondyn;
 };
@@ -60,7 +68,9 @@ ${childrenLondyn.value}<br>
 Dodatkowy bagaż:<br> 
 ${extraBaggageLon.options[extraBaggageLon.selectedIndex].text}<br> 
 Data wylotu:<br>
-${document.getElementById('datepicker').value}<br>
+${document.getElementById('datepicker').value.onclick}<br>
+Data przylotu:<br>
+${document.getElementById('datepicker2').value.onclick}<br>
 Miejsce:<br> 
 rząd:${rowLondyn.value}<br> 
 miejsce:${seatLondyn.text}<br> 

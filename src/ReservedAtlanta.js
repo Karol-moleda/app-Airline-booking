@@ -34,11 +34,18 @@ function dodatkowybagaż (){
    return 0;
   }
 }
-
+function powrotAtlanta(){
+  if(fly.options[fly.selectedIndex].value==="TwoTrip"){
+    return 1000;
+  }
+  else{
+    return 0;
+  }
+};
  
 
 function Sum(){
-  let wynik= cena()+dodatkowybagaż ();
+  let wynik= cena()+dodatkowybagaż () + powrotAtlanta();
   document.getElementById("price").innerHTML =`Cena: ${wynik} zł</br>`
   return wynik;
 }
@@ -83,7 +90,9 @@ ${children.value}<br>
 Dodatkowy bagaż:<br> 
 ${extraBaggage.options[extraBaggage.selectedIndex].text}<br> 
 Data wylotu:<br>
-${document.getElementById('datepicker').value}<br>
+${document.getElementById('datepicker').value.onclick}<br>
+Data przylotu:<br>
+${document.getElementById('datepicker2').value.onclick}<br>
 Miejsce:<br> 
 rząd:${row.value}<br> 
 miejsce:${seat.text}<br> 

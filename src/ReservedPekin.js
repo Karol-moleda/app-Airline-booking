@@ -19,8 +19,16 @@ function extraBaggagePekin(){
   }
 };
 
+function powrotPekin(){
+  if(flyPekin.options[flyPekin.selectedIndex].value==="TwoTrip"){
+    return 850;
+  }
+  else{
+    return 0;
+  }
+};
 function SumPekin(){
-  let wynikPekin= pricePekin()+extraBaggagePekin ();
+  let wynikPekin= pricePekin()+extraBaggagePekin()+ powrotPekin();
   document.getElementById("pricePekin").innerHTML =`Cena: ${wynikPekin} zł</br>`
   return wynikPekin;
 };
@@ -62,7 +70,9 @@ ${childrenPekin.value}<br>
 Dodatkowy bagaż:<br> 
 ${extraBaggagePek.options[extraBaggagePek.selectedIndex].text}<br> 
 Data wylotu:<br>
-${document.getElementById('datepicker').value}<br>
+${document.getElementById('datepicker').value.onclick}<br>
+Data wylotu:<br>
+${document.getElementById('datepicker2').value.onclick}<br>
 Miejsce:<br> 
 rząd:${rowPekin.value}<br> 
 miejsce:${seatPekin.text}<br> 
