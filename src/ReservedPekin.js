@@ -1,8 +1,8 @@
+
 const passengersPekin=document.getElementById("passengersPekin");
 const childrenPekin=document.getElementById("childrenPekin");
 const extraBaggagePek=document.getElementById("extraBaggagePekin");
-const rowPekin=document.getElementById("rowPekin");
-const seatPekin=document.getElementById("seatPekin");
+
 const flyPekin=document.getElementById("seatPekinFly");
 
 function pricePekin(){
@@ -53,6 +53,12 @@ function weatherPekin(){
     
       document.getElementById("weatherPekin").innerText = `Temperatura w Pekinie ${((data.main.temp - 273.15).toFixed(1))}C`})};
 
+      function seatPekinTwo (){
+        
+        document.getElementById('Pekinseat2').innerHTML=`Miejsce: ${document.getElementById("Pekinseat").innerHTML}`;
+      }
+
+
 const btnPekin=document.getElementById("summationPekin");
 btnPekin.addEventListener("click",(e)=>{
 e.preventDefault();
@@ -73,9 +79,6 @@ Data wylotu:<br>
 ${document.getElementById('datepicker').value.onclick}<br>
 Data wylotu:<br>
 ${document.getElementById('datepicker2').value.onclick}<br>
-Miejsce:<br> 
-rząd:${rowPekin.value}<br> 
-miejsce:${seatPekin.text}<br> 
 Przelot:<br> 
 ${flyPekin.options[flyPekin.selectedIndex].text}<br>
 Pogoda:<br>
@@ -84,5 +87,7 @@ Pogoda:<br>
 weatherPekin();
 SumPekin();
 getCurrencyPekin();
+seatPekinTwo ();
+
 });
 

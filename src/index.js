@@ -10,7 +10,7 @@ import{Login} from "./login";
 import{Zoom} from "./zoom";
 import{ZoomPek} from "./zoomPek";
 import{ZoomLon} from "./zoomLon";
-
+import{aa} from "./aa"
 
 
 
