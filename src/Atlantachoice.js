@@ -1,9 +1,8 @@
-$("#greenAtlanta").click(function() {
-    let seatAtlatnachoice=$(this).attr('d').slice(0,4)
-    let seatAtlantaEnd=$("#Atlantaseat").append(seatAtlatnachoice); 
-    return seatAtlantaEnd
-  })
-  
+$(".greenAtlatna").click(function() {
+  let seatAtlantachoice=$(this).attr('d').slice(0,4)
+  let seatAtlantaEnd=$("#Atlantaseat").append(seatAtlantachoice); 
+  return seatAtlantaEnd
+})
   document.getElementById('datepicker').addEventListener('change', ()=>{
     if(document.getElementById('datepicker').value){
       return document.getElementById("dataOutAtlanta").innerText="Data wylotu:"+ document.getElementById('datepicker').value;

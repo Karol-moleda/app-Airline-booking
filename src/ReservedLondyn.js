@@ -50,7 +50,7 @@ function weatherLondyn(){
       document.getElementById("weatherLondyn").innerText = `Temperatura w Londynie ${((dataLondyn.main.temp - 273.15).toFixed(1))}C`})};
 
       function seatLondynTwo (){
-        document.getElementById('Atlantaseat2').innerHTML=`Miejsce: ${document.getElementById("Atlatnaseat").innerHTML}`;
+        document.getElementById('Londynseat2').innerHTML=`Miejsce: ${document.getElementById("Londynseat").innerHTML}`;
             }
 
 

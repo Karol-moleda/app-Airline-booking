@@ -1,4 +1,3 @@
-
 const passengers=document.getElementById("passengersAtlanta");
 const children=document.getElementById("childrenAtlatna");
 const extraBaggage=document.getElementById("extraBaggageAtlanta");
