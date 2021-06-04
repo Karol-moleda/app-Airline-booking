@@ -53,9 +53,8 @@ function weatherPekin(){
     
       document.getElementById("weatherPekin").innerText = `Temperatura w Pekinie ${((data.main.temp - 273.15).toFixed(1))}C`})};
 
-      function seatPekinTwo (){
-        
-        document.getElementById('Pekinseat2').innerHTML=`Miejsce: ${document.getElementById("Pekinseat").innerHTML}`;
+function seatPekinTwo (){
+  document.getElementById('Pekinseat2').innerHTML=`Miejsce: ${document.getElementById("Pekinseat").innerHTML}`;
       }
 
 
@@ -76,9 +75,9 @@ ${childrenPekin.value}<br>
 Dodatkowy bagaż:<br> 
 ${extraBaggagePek.options[extraBaggagePek.selectedIndex].text}<br> 
 Data wylotu:<br>
-${document.getElementById('datepicker').value.onclick}<br>
+${document.getElementById('datepicker').value}<br>
 Data wylotu:<br>
-${document.getElementById('datepicker2').value.onclick}<br>
+${document.getElementById('datepicker2').value}<br>
 Przelot:<br> 
 ${flyPekin.options[flyPekin.selectedIndex].text}<br>
 Pogoda:<br>

@@ -2,8 +2,29 @@
 	display: none;
     justify-content: center;
 	#planeLon{
-	padding-right: 10%;
-	fill: white;}
+	transform: scale(0.80);
+	.greenLondyn:hover{fill:green};
+	.redLondyn:hover{fill:red};}
+}
+#LondynBox1{
+	display: flex;
+	margin-top: 5%;
+#greenLondyn{
+	margin-right: 5%;
+	height:20px ;
+	width:20px ;
+	background-color: green;
+}}
+#LondynBox2{
+	display: flex;
+	margin-top: 5%;
+#redLondyn{
+	margin-right: 5%;
+	height:20px ;
+	width:20px ;
+	background-color: red;
+
+}
 }
 
 

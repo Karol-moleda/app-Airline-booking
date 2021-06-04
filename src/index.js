@@ -10,7 +10,9 @@ import{Login} from "./login";
 import{Zoom} from "./zoom";
 import{ZoomPek} from "./zoomPek";
 import{ZoomLon} from "./zoomLon";
-import{aa} from "./aa"
+import{Pekinchoice} from "./Pekinchoice";
+import{Atlatnachoice} from "./Atlantachoice";
+import{Londynchoice} from "./Londynchoice";
 
 
 

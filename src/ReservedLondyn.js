@@ -1,8 +1,6 @@
 const passengersLondyn=document.getElementById("passengersLondyn");
 const childrenLondyn=document.getElementById("childrenLondyn");
 const extraBaggageLon=document.getElementById("extraBaggageLondyn");
-const rowLondyn=document.getElementById("rowLondyn");
-const seatLondyn=document.getElementById("seatLondyn");
 const flyLondyn=document.getElementById("seatLondynFly");
 
 function priceLondyn(){
@@ -51,7 +49,12 @@ function weatherLondyn(){
     
       document.getElementById("weatherLondyn").innerText = `Temperatura w Londynie ${((dataLondyn.main.temp - 273.15).toFixed(1))}C`})};
 
-const btnLondyn=document.getElementById("summationLondyn");
+      function seatLondynTwo (){
+        document.getElementById('Atlantaseat2').innerHTML=`Miejsce: ${document.getElementById("Atlatnaseat").innerHTML}`;
+            }
+
+
+      const btnLondyn=document.getElementById("summationLondyn");
 btnLondyn.addEventListener("click",(e)=>{
 e.preventDefault();
 document.getElementById("FieldseLondyn").style.display="none";
@@ -68,12 +71,9 @@ ${childrenLondyn.value}<br>
 Dodatkowy bagaż:<br> 
 ${extraBaggageLon.options[extraBaggageLon.selectedIndex].text}<br> 
 Data wylotu:<br>
-${document.getElementById('datepicker').value.onclick}<br>
+${document.getElementById('datepicker').value}<br>
 Data przylotu:<br>
-${document.getElementById('datepicker2').value.onclick}<br>
-Miejsce:<br> 
-rząd:${rowLondyn.value}<br> 
-miejsce:${seatLondyn.text}<br> 
+${document.getElementById('datepicker2').value}<br>
 Przelot:<br> 
 ${flyLondyn.options[flyLondyn.selectedIndex].text}<br>
 Pogoda:<br>
@@ -81,6 +81,7 @@ Pogoda:<br>
 weatherLondyn();
 SumLondyn();
 getCurrencyLondyn();
+seatLondynTwo ();
 
 });
 

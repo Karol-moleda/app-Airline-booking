@@ -3,8 +3,6 @@ const passengers=document.getElementById("passengersAtlanta");
 const children=document.getElementById("childrenAtlatna");
 const extraBaggage=document.getElementById("extraBaggageAtlanta");
 const position=document.getElementById("positionAtlanta");
-const row=document.getElementById("rowAtlanta");
-const seat=document.getElementById("seatAtlanta");
 const fly=document.getElementById("seat");
 function cena(){
   if(position.options[position.selectedIndex].value==="Busines"){
@@ -73,7 +71,9 @@ function pogoda(){
     
       document.getElementById("pogoda").innerText = `Temperatura w Atlancie ${((data.main.temp - 273.15).toFixed(1))}C`})};
 
-
+function seatAtlantaTwo (){
+  document.getElementById('Atlatnaseat2').innerHTML=`Miejsce: ${document.getElementById("Atlantaseat").innerHTML}`;
+            }
 const btn=document.getElementById("summationAtlanta");
  btn.addEventListener("click",(e)=>{
    e.preventDefault();
@@ -90,12 +90,9 @@ ${children.value}<br>
 Dodatkowy bagaż:<br> 
 ${extraBaggage.options[extraBaggage.selectedIndex].text}<br> 
 Data wylotu:<br>
-${document.getElementById('datepicker').value.onclick}<br>
+${document.getElementById('datepicker').value}<br>
 Data przylotu:<br>
-${document.getElementById('datepicker2').value.onclick}<br>
-Miejsce:<br> 
-rząd:${row.value}<br> 
-miejsce:${seat.text}<br> 
+${document.getElementById('datepicker2').value}<br>
 Klasa:<br> 
 ${position.options[position.selectedIndex].text}<br> 
 Przelot:<br> 
@@ -105,6 +102,7 @@ Pogoda:<br>
 pogoda();
 Sum();
 getCurrency();
+seatAtlantaTwo();
 });
 
 
