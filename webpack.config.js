@@ -12,6 +12,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
   entry: {
     "index": "./src/index.js",
+    
   }, 
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -24,7 +25,8 @@ module.exports = {
   },
   plugins: [
         new HtmlWebpackPlugin({
-          template: "./src/index.html"}),
+          template: "./src/index.html",
+          }),
           new HtmlWebpackPlugin({
             template: './src/kontakt.html',
             inject: true,

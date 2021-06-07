@@ -13,6 +13,7 @@ import{ZoomLon} from "./zoomLon";
 import{Pekinchoice} from "./Pekinchoice";
 import{Atlatnachoice} from "./Atlantachoice";
 import{Londynchoice} from "./Londynchoice";
+import{person} from "./personlist";
 
 
 
