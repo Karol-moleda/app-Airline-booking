@@ -75,9 +75,9 @@ ${childrenPekin.value}<br>
 Dodatkowy bagaż:<br> 
 ${extraBaggagePek.options[extraBaggagePek.selectedIndex].text}<br> 
 Data wylotu:<br>
-${document.getElementById('datepicker').value}<br>
-Data wylotu:<br>
-${document.getElementById('datepicker2').value}<br>
+${document.getElementById('dataOutPekin').innerText}<br>
+Data Przylotu:<br>
+${document.getElementById('dataInPekin').innerText}<br>
 Przelot:<br> 
 ${flyPekin.options[flyPekin.selectedIndex].text}<br>
 Pogoda:<br>

@@ -89,9 +89,9 @@ ${children.value}<br>
 Dodatkowy bagaż:<br> 
 ${extraBaggage.options[extraBaggage.selectedIndex].text}<br> 
 Data wylotu:<br>
-${document.getElementById('datepicker').value}<br>
+${document.getElementById('dataOutAtlanta').innerText}<br>
 Data przylotu:<br>
-${document.getElementById('datepicker2').value}<br>
+${document.getElementById('dataInAtlanta').innerText}<br>
 Klasa:<br> 
 ${position.options[position.selectedIndex].text}<br> 
 Przelot:<br> 

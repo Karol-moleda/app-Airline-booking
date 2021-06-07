@@ -4,6 +4,7 @@
     background-color: $light;
     position: absolute;
   };
+
 $dark: #171717;
 $light: #FFFFFF;
 
@@ -13,17 +14,17 @@ $light: #FFFFFF;
 // Extra Large
 @media screen and (min-width: 1200px){ 
     header{
-    .hamburger{
+        .hamburger{
         display: none;
     };
-    .navigation{
+        .navigation{
         display: none;
     }
-    .nav{
+        .nav{
         padding-top: 3%;
         padding-left:3%;
-    .nav-link{color:black}
-    #czas{
+            .nav-link{color:black}
+            #czas{
             position: absolute;
             top: 100px;
             right:70px;
@@ -139,7 +140,7 @@ main{
         margin: 0%;
         padding: 0%;
         flex-direction: column;
-        #plane{display: flex;
+            #plane{display: flex;
             justify-content: flex-start;
         }
      

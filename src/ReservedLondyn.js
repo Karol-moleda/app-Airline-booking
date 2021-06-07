@@ -71,9 +71,9 @@ ${childrenLondyn.value}<br>
 Dodatkowy bagaż:<br> 
 ${extraBaggageLon.options[extraBaggageLon.selectedIndex].text}<br> 
 Data wylotu:<br>
-${document.getElementById('datepicker').value}<br>
+${document.getElementById('dataLondyn').innerText}<br>
 Data przylotu:<br>
-${document.getElementById('datepicker2').value}<br>
+${document.getElementById('dataInLondyn').innerText}<br>
 Przelot:<br> 
 ${flyLondyn.options[flyLondyn.selectedIndex].text}<br>
 Pogoda:<br>

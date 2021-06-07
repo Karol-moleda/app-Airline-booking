@@ -3,8 +3,8 @@
     justify-content: center;
 	#plane{
 	transform: scale(0.8);
-	.greenAtlatna:hover{fill:green};
-	.redAtlatna:hover{fill:red};
+		.greenAtlatna:hover{fill:green};
+		.redAtlatna:hover{fill:red};
 	}
 }	
 
@@ -35,17 +35,18 @@
 	z-index: -1;
 	transform: skew(1.5deg, 1.5deg);
 	background: linear-gradient(315deg, var(--gd1-color1), var(--gd1-color2));
-  }
+}
   
 #summary:nth-child(2)::before {
 
 	background: linear-gradient(315deg, var(--gd2-color1), var(--gd2-color2));
-  }
+}
   
 #summary:nth-child(3)::before {
 
 	background: linear-gradient(315deg, var(--gd3-color1), var(--gd3-color2));
-  }
+}
+
 #AtlantaBox1{
 	display: flex;
 	margin-top: 5%;
