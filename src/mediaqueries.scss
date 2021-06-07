@@ -8,24 +8,464 @@ $dark: #171717;
 $light: #FFFFFF;
 
 
-@media screen and (min-width: 1768px) {
-    };
+
   
 // Extra Large
-@media screen and (min-width: 1200px) and (max-width:1767px) { 
- };
+@media screen and (min-width: 1200px){ 
+    header{
+    .hamburger{
+        display: none;
+    };
+    .navigation{
+        display: none;
+    }
+    .nav{
+        padding-top: 3%;
+        padding-left:3%;
+    .nav-link{color:black}
+    #czas{
+            position: absolute;
+            top: 100px;
+            right:70px;
+            font-size: 25px;
+        }
+    }
+    };
+    #planeAtlanta{
+        max-width: 90%;
+    };
+    #planePekin{
+        max-width: 90%
+    };
+    #planeLondyn{
+        max-width: 80%;
+    }
+}
 
  // Large devices (desktops, 992px and up)
 @media screen and (min-width: 992px) and (max-width:1199px){ 
+    header{
+        .hamburger{
+            display: none;
+        };
+        .navigation{
+            display: none;
+        }
+        .nav{
+            padding-top: 3%;
+            padding-left:3%;
+        .nav-link{color:black}
+        #czas{
+                position: absolute;
+                top: 100px;
+                right:70px;
+                font-size: 25px;
+            }
+        }
+    };
+    main{
+        max-width: auto;
+    };
+    #planeAtlanta{
+        max-width: 80%;
+    };
+    #planePekin{
+        max-width: 80%
+    };
+    #planeLondyn{
+        max-width: 60%;
+    }
 };
 
 // Medium devices (tablets, 768px and up)
 @media screen and (min-width: 768px) and (max-width:991px) {
+header{
+    .hamburger{
+        display: none;
+    };
+    .navigation{
+        display: none;
+    }
+    .nav{
+        padding-top: 3%;
+        padding-left:3%;
+    .nav-link{color:black}
+    #czas{
+            position: absolute;
+            top: 100px;
+            right:70px;
+            font-size: 25px;
+        }
+    }
+
+};
+main{
+    .Linie{
+        padding-top: 3%;
+    }
+    .place{
+        display: block;
+        text-align: center;
+        .route{
+            padding-top: 3%;
+            .input-group{
+                display: flex;
+                justify-content: center;
+            }
+            .arrows{
+            padding: 0%;
+            padding-bottom:2%;
+            }
+        };
+        #Wybierz{
+            margin-top: 3%;
+        }
+        
+        
+    };
+    #other{
+        display: block;
+        #weather{
+        padding-left: 5%;
+        }
+        #waluta{
+            padding-left: 5%;
+            padding-right: 20%;
+            padding-top: 3%;
+            text-align: center;
+        }
+    };
+    #planeAtlanta{
+        margin: 0%;
+        padding: 0%;
+        flex-direction: column;
+        #plane{display: flex;
+            justify-content: flex-start;
+        }
+     
+        #summary{
+            width: 300px;
+            height: 850px;
+            font-size: 18px;
+            margin: auto;
+        };
+        #FieldsetAtlanta{
+            text-align: center;
+            margin:auto;
+            legend{
+                font-size: 25px;
+            };
+            label{
+                font-size: 20px;
+            }
+        }
+    };
+
+
+    #planePekin{
+    margin: 0%;
+    padding: 0%;
+
+    flex-direction: column;
+    #planePek{display: flex;
+        justify-content: flex-start;
+    }
+ 
+    #summaryPekin{
+        width: 300px;
+        height: 850px;
+        font-size: 18px;
+        margin: auto;
+    };
+    #FieldsetPekin{
+        text-align: center;
+        margin:auto;
+        legend{
+            font-size: 25px;
+        };
+        label{
+            font-size: 20px;
+        }
+    }
+    };
+
+
+    #planeLondyn{
+    margin: 0%;
+    padding: 0%;
+    flex-direction: column;
+    #planeLon{display: flex;
+        justify-content: flex-start;
+    };
+    #summaryLondyn{
+        width: 300px;
+        height: 850px;
+        font-size: 18px;
+        margin: auto;
+    };
+    #formLondyn{
+    #FieldseLondyn{
+        text-align: center;
+        margin:auto;
+        legend{
+            font-size: 25px;
+        };
+        label{
+            font-size: 20px;
+        };
+    };}
+    }
+}
 };
 
 
 // Small devices (landscape phones, 576px and up)
 @media screen and (min-width: 576px)and(max-width:767px) { 
+    body {
+        margin: 3%;
+        background-color: $dark;
+        padding: 20px;
+      };
+    header{
+        .nav{
+        display: none;
+        #czas{
+            display: none;
+            }
+        }
+        img{
+            display: none;
+            }
+    
+    
+    .hamburger {
+      padding: 10px;
+      display: inline-block;
+      cursor: pointer;
+      background-color: transparent;
+      border: 0;
+      margin: 0;
+    }
+    
+    .hamburger, .navigation {
+      transition: transform .3s .1s ease-in-out;
+    }
+    
+    .hamburger--active {
+      transform: translatex(250px);
+    }
+    
+    .hamburger__box {
+      width: 35px;
+      height: 24px;
+      display: inline-block;
+      position: relative;
+    }
+    
+    
+    
+    .hamburger__inner {
+      @include hamburger-line;
+      
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: background-color .1s .2s ease-in-out;
+    }
+    
+    .hamburger__inner::before,
+    .hamburger__inner::after {
+      @include hamburger-line;
+      
+      content: '';
+      left: 0;
+      transition: transform .2s .2s ease-in-out;
+    } 
+    
+    .hamburger__inner::before {
+      top: -10px;
+    }
+    
+    .hamburger__inner::after {
+      top: 10px;
+    }
+    
+    .hamburger--active .hamburger__inner {
+      background-color: transparent;
+    }
+    
+    .hamburger--active .hamburger__inner:before {
+      transform: translateY(10px) rotate(45deg);
+    }
+    
+    .hamburger--active .hamburger__inner:after {
+      transform: translateY(-10px) rotate(-45deg);
+    }
+    
+    .navigation {
+      height: 100vh;
+      width: 250px;
+      background-color: $light;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-250px);
+    }
+    
+    .navigation--active {
+      transform: translateX(0px);
+    }
+    
+    .navigation__list {
+      margin-top: 50px;
+      list-style: none;
+    }
+    
+    .navigation__item {
+      margin-bottom: 20px;
+      
+      a {
+        text-decoration: none;
+        color: $dark;
+      }
+    }
+    };
+    
+    main{
+        .Linie {
+            padding-top: 3%;
+        .display-5{
+            font-size: 1.5rem;};
+            span{
+                display:none
+            }
+        };
+        .place{
+            display: block;
+            text-align: center;
+            .route{
+                .input-group{
+                    display: flex;
+                    justify-content: center;
+                }
+                .arrows{
+                padding: 0%;
+                padding-bottom:2%;
+                }
+            };
+            #Wybierz{
+                margin-top: 3%;
+            }
+            
+            
+        };
+        #other{
+            display: none;
+        };
+        #lot{
+            font-size: 15px;
+            img{display:none}
+        };
+        #poradnik{
+            font-size: 15px;
+        };
+
+        #planeAtlanta{
+            margin: 0%;
+            padding: 0%;
+            flex-direction: column;
+            #plane{display: flex;
+                justify-content: flex-start;
+            }
+         
+            #summary{
+                width: 300px;
+                height: 850px;
+                font-size: 18px;
+                margin: auto;
+            };
+            #FieldsetAtlanta{
+                text-align: center;
+                margin:auto;
+                legend{
+                    font-size: 22px;
+                };
+                label{
+                    font-size: 17px;
+                }
+            }
+        };
+    
+    
+        #planePekin{
+        margin: 0%;
+        padding: 0%;
+
+        flex-direction: column;
+        #planePek{display: flex;
+            justify-content: flex-start;
+        }
+     
+        #summaryPekin{
+            width: 300px;
+            height: 850px;
+            font-size: 18px;
+            margin: auto;
+        };
+        #FieldsetPekin{
+            text-align: center;
+            margin:auto;
+            legend{
+                font-size: 22px;
+            };
+            label{
+                font-size: 17px;
+            }
+        }
+        };
+    
+
+        #planeLondyn{
+        margin: 0%;
+        padding: 0%;
+        flex-direction: column;
+        #planeLon{display: flex;
+            justify-content: flex-start;
+        };
+        #summaryLondyn{
+            width: 300px;
+            height: 850px;
+            font-size: 18px;
+            margin: auto;
+        };
+        #formLondyn{
+        #FieldseLondyn{
+            text-align: center;
+            margin:auto;
+            legend{
+                font-size: 22px;
+            };
+            label{
+                font-size: 17px;
+            };
+        };}
+        }
+    
+        #mainAll{
+        width:400px;
+        height: 180px;
+            legend{
+                font-size: 20px;
+            };
+            label{
+                font-size: 18px;
+            }
+    
+    };
+
+    
+    };
+    
 };
 
 
@@ -46,9 +486,6 @@ header{
     img{
         display: none;
         }
-
-
-
 
 
 .hamburger {
@@ -153,10 +590,22 @@ main{
         }
     };
     .place{
+        padding-top: 2%;
         display: block;
-        justify-content: center;
-        
-    };
+        text-align: center;
+        .route{
+            .input-group{
+                display: flex;
+                justify-content: center;
+            };
+            .arrows{
+            padding: 0%;
+            padding-bottom:2%;
+            };        
+    }
+    #Wybierz{
+        margin-top: 3%;
+    };};
     #other{
         display: none;
     };
@@ -168,7 +617,101 @@ main{
         font-size: 15px;
     }
   
+#planeAtlanta{
+        margin: 0%;
+        padding: 0%;
+        flex-direction: column;
+        #plane{display: flex;
+            justify-content: flex-start;
+        }
+     
+        #summary{
+            width: 300px;
+            height: 700px;
+            font-size: 14px;
+            margin: auto;
+        };
+        #FieldsetAtlanta{
+            text-align: center;
+            margin:auto;
+            legend{
+                font-size: 18px;
+            };
+            label{
+                font-size: 14px;
+            }
+        }
+    }
 
+
+#planePekin{
+    margin: 0%;
+    padding: 0%;
+    flex-direction: column;
+    #planePek{display: flex;
+        justify-content: flex-start;
+    }
+ 
+    #summaryPekin{
+        width: 300px;
+		height: 700px;
+        font-size: 14px;
+        margin: auto;
+    };
+    #FieldsetPekin{
+        text-align: center;
+        margin:auto;
+        legend{
+            font-size: 18px;
+        };
+        label{
+            font-size: 14px;
+        }
+    }
+}
+
+
+#planeLondyn{
+    margin: 0%;
+    padding: 0%;
+    flex-direction: column;
+    #planeLon{display: flex;
+        justify-content: flex-start;
+    }
+ 
+    #summaryLondyn{
+        width: 300px;
+		height: 700px;
+        font-size: 14px;
+        margin: auto;
+    };
+    #formLondyn{
+        #FieldseLondyn{
+
+        text-align: center;
+        margin:auto;
+        legend{
+            font-size: 18px;
+        };
+        label{
+            font-size: 14px;
+        }
+    }}
+};
+
+#mainAll{
+	width:400px;
+	height: 150px;
+        legend{
+            font-size: 15px;
+        };
+        label{
+            font-size: 15px;
+        }
+
+
+};
 };
 
 };
+
