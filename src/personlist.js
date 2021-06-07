@@ -21,9 +21,9 @@ fetch("./src/personlist.json")
             let arr = data[key];
             for(let i = 0; i < arr.length; i++ ) {
                 let obj = arr[ i ];
-               
-                document.getElementById("Personlist").innerHTML +=`${obj.Imie  + obj.Nazwisko}`
-                console.log(obj)
+                
+            document.getElementById("Personlist2").innerHTML =arr.map((obj)=>`${obj.Imie} ${obj.Nazwisko} <br>`).join('');
+
                     }
                 }
             }
