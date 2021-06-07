@@ -16,13 +16,15 @@
 
 
   <body>
+
 	  <!-- header -->
     <header>
 		<div>
 				<img src="./assets/logo.png" alt="logo" />
 			
 		</div>
-		<ul class="nav nav-tabs">
+		
+		<ul class="nav nav-tabs nav-expand-md ">
 			<li class="nav-item">
 			  <a class="nav-link active" href="#lot">Miejsca do których latamy</a>
 			</li>
@@ -41,6 +43,21 @@
 
 
 		</ul>
+
+		<button class="hamburger">
+			<span class="hamburger__box">
+			  <span class="hamburger__inner"></span>
+			</span>
+		  </button>
+		  <div class="navigation">
+			<ul class="navigation__list">
+			  <li class="navigation__item"><a href="#lot">Miejsca do których latamy</a></li>
+			  <li class="navigation__item"><a href="#weather">Pogoda</a></li>
+			  <li class="navigation__item"><a href="#waluta">Aktualna cena waluty</a></li>
+			  <li class="navigation__item"><a href="#poradnik">Poradnik podróżnika</a></li>
+			</ul>
+		  </div>
+
 
 
     </header>
@@ -204,14 +221,14 @@
 
     <div id="lot"> 
     <div class="row">
-      <div class="col-4">
+      <div class=" col-6 col-md-4 ">
         <div class="list-group" id="list-tab" role="tablist">
           <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Atlanta</a>
           <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Pekin</a>
           <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Londyn</a>
         </div>
       </div>
-      <div class="col-8">
+      <div class="col-6 col-md-8">
         <div class="tab-content" id="nav-tabContent">
           <div class="Atlanta tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list"><p>
             <img src="./assets/Atlanta.jpg" class="mr-3" alt="Atlanta" />
@@ -1324,6 +1341,7 @@
 		</div>
 
 	</form>
+
 
 	<div id="Personlist"></div>
 

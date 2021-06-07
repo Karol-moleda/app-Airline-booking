@@ -14,6 +14,7 @@ import{Pekinchoice} from "./Pekinchoice";
 import{Atlatnachoice} from "./Atlantachoice";
 import{Londynchoice} from "./Londynchoice";
 import{person} from "./personlist";
+import{hum} from "./humburger";
 
 
 

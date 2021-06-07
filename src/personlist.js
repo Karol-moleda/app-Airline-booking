@@ -1,6 +1,7 @@
 const btnFinish= document.getElementById('personButton')
 
 btnFinish.addEventListener('click',(e)=>{
+alert("Sprawdziłeś wszystkie dane?")
 e.preventDefault();
 document.getElementById("other").style.display="none"
 document.getElementById("lot").style.display="none"
