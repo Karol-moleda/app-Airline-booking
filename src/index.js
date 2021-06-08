@@ -1,20 +1,20 @@
 import style from "./index.scss"
-import {currency} from "./currency";
-import {clock} from "./clock";
-import {dateout} from "./date";
-import {choice} from "./button" ;
-import {Atlanta} from "./ReservedAtlanta";
-import {ReservedPekin} from "./ReservedPekin";
-import {Londyn} from "./ReservedLondyn";
-import{Login} from "./login";
-import{Zoom} from "./zoom";
-import{ZoomPek} from "./zoomPek";
-import{ZoomLon} from "./zoomLon";
-import{Pekinchoice} from "./Pekinchoice";
-import{Atlatnachoice} from "./Atlantachoice";
-import{Londynchoice} from "./Londynchoice";
-import{person} from "./personlist";
-import{hum} from "./humburger";
+import {currency} from "./js/currency";
+import {clock} from "./js/clock";
+import {dateout} from "./js/date";
+import {choice} from "./js/button" ;
+import {Atlanta} from "./js/ReservedAtlanta";
+import {ReservedPekin} from "./js/ReservedPekin";
+import {Londyn} from "./js/ReservedLondyn";
+import{Login} from "./js/login";
+import{Zoom} from "./js/zoom";
+import{ZoomPek} from "./js/zoomPek";
+import{ZoomLon} from "./js/zoomLon";
+import{Pekinchoice} from "./js/Pekinchoice";
+import{Atlatnachoice} from "./js/Atlantachoice";
+import{Londynchoice} from "./js/Londynchoice";
+import{person} from "./js/personlist";
+import{hum} from "./js/humburger";
 
 
 
