@@ -8,11 +8,6 @@ function cena(){
     console.log("ok")
   return (passengers.value *2000)+(children.value*1000);
 }
-  else if(position.options[position.selectedIndex].value==="Premium"){
-    console.log("OK2")
-    return (passengers.value *1000)+(children.value*500);
-
-  }
   else if(position.options[position.selectedIndex].value==="Economy"){
     return (passengers.value *500)+(children.value*250);
 

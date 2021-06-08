@@ -15,6 +15,11 @@
     margin-bottom: 10%;
 	padding-left: 7vh;
 	padding-right: 5vh;
+    .row{
+        #row-col{
+            position: static;
+        }
+    }
     .Atlanta{text-align: justify};
     .Pekin{text-align: justify};
     .Londyn{text-align: justify;}

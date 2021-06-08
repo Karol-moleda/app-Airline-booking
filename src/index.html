@@ -224,14 +224,14 @@
 
     <div id="lot"> 
     	<div class="row">
-      		<div class=" col-6 col-md-4 ">
+      		<div class=" col-6 col-md-4 "  >
         		<div class="list-group" id="list-tab" role="tablist">
           			<a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Atlanta</a>
           			<a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Pekin</a>
           			<a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Londyn</a>
         		</div>
       		</div>
-      		<div class="col-6 col-md-8">
+      		<div class=" col-6 col-md-8">
         		<div class="tab-content" id="nav-tabContent">
           			<div class="Atlanta tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list"><p>
             		<img src="./assets/Atlanta.jpg" class="mr-3" alt="Atlanta" />
@@ -764,7 +764,6 @@
 				<Select id="positionAtlanta">
 					<option></option>
 					<Option value="Busines">Busines</Option>
-					<Option value="Premium">Premium Economy</Option>
 					<Option value="Economy">Economy</Option>
 				</Select><br><br>
 				<label>Miejsce:<br>
@@ -1327,8 +1326,8 @@
 		<div id='mainAll'>
 			<fieldset>
 				<legend>Logowanie</legend>
-				<label for='username'>Nazwa użytkownika:</label>
-				<input type='text' id="username" name='username'/><br>
+				<label for='username'>Imię i Naziwsko</label>
+				<input type='text' id="usernameEnd" name='username'/><br>
 				<label for='pwd'>Hasło:</label>
 				<input type='password' id='pwd' name='pwd'/><br>
 				<button id="personButton">Zaloguj</button>
@@ -1339,8 +1338,11 @@
 	</form>
 
 	<!-- personal List -->
-	<div id="Personlist"><h1>Lista uczestników:</h1>
-	<div id="Personlist2"></div></div>
+	<div id="Personlist">
+		<h1>Lista uczestników:</h1>
+		<div id="Personlist2"></div>
+		<div id="YourName"></div>
+	</div>
 
     </main>
 

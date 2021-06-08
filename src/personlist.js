@@ -26,10 +26,9 @@ fetch("./src/personlist.json")
 
                     }
                 }
-            }
-
-      
-)})
+    });
+    document.getElementById("YourName").innerHTML += document.getElementById("usernameEnd").value;
+})
 
 
 export const Pesron = function () {Person}
