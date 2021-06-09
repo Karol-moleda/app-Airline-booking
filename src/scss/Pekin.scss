@@ -2,8 +2,8 @@
     display:none;
     justify-content: center;
 	#planePek{transform: scale(0.80);
-		.greenPekin:hover{fill:green};
-		.redPekin:hover{fill:red};
+		.greenPekin:hover{fill:$Free};
+		.redPekin:hover{fill:$Busy};
 	}
 	}
 	#PekinBox1{
@@ -13,7 +13,7 @@
 		margin-right: 5%;
 		height:20px ;
 		width:20px ;
-		background-color: green;
+		background-color: $Free;
 	}}
 	#PekinBox2{
 		display: flex;
@@ -22,7 +22,7 @@
 		margin-right: 5%;
 		height:20px ;
 		width:20px ;
-		background-color: red;
+		background-color: $Busy;
 	
 	}
 	}

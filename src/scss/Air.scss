@@ -1,6 +1,6 @@
 .Linie{
 
-    background: rgb(199, 71, 39);
+    background: $red;
 	padding-bottom: 10px;
 }
 .place{
@@ -10,7 +10,7 @@
 	align-items: center;
     padding:0.5% 5% 2% 5%; 
     margin-bottom: 10%;
-    background:rgb(199, 71, 39); 
+    background:$red; 
 	.route{flex-direction: column;
 			.arrows{padding-left: 50%;
 				padding-top:2%;
